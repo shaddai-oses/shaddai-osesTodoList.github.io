@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- para el link entre los documentos -->
+    <link rel="stylesheet" href="app.css">
+<!--  para la fuente de la letra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <title>TodoApp lista de tareas</title>
+</head>
+<body>
+    <!-- lo ideal para el css editar cualquier cosa es colocar un div, id y clases -->
+<div id="todo-app-page">
+    <h1 id="form-logo">Todo App</h1>
+    <main id="all-content">
+        <form id="form">
+            <div id="put-and-send-task">
+                <input type="text" name="task" id="write-a-task" placeholder="Create some task...">
+                <!-- codigo del icono para el boton send -->
+                <button id="button-send" type="submit">
+                <svg id="button-send-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
+                  </svg>
+                </button>
+            </div>
+        </form>
+
+       <div id="container-tasks">
+        <!-- para hacer la lista primero se coloca el ul que es donde se encuentra la lista almacenada -->
+            <ul id="container-list">
+            </ul>
+        </div>
+        <!-- para los botones -->
+        <div id="counters">
+            <span  id="total-count">Total:</span>
+            <span id="completed-count">Completed:</span>
+            <span id="incompleted-count">Incompleated:</span>
+        </div>
+    </main>
+</div> 
+<script src="app.js"></script>
+</body>
+</html>
